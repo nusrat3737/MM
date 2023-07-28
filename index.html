@@ -1,0 +1,33 @@
+<html>
+<head>
+<title> Project 1 </title>
+<style>
+	*{font-size:40px;}
+	body{ background-color: #F5F5DC}
+</style>
+
+<script>
+
+	function show()
+	{
+	event.preventDefault();
+	let ans = document.getElementById("ans");
+	let mm = ["Enjoy Life Till You Can","Stay Calm Life is a Test","Love Yourself","Count your Blessings","Be the real You"];
+	let r = parseInt(Math.random() * mm.length);
+	ans.innerHTML = mm[r];
+	}
+</script>
+
+</head>
+<body>
+
+<center>
+<h1> Motivational Message V1</h1>
+<form onsubmit="show()">
+<input type="submit" value ="Get Message"/>
+</form>
+<h1 id="ans" />
+</center>
+</body>
+
+</html>
